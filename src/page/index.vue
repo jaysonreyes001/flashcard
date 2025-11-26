@@ -1,6 +1,6 @@
 <template lang="">
      <div class="flex justify-center mt-[200px] w-full ">
-          <div class="bg-[#101828] block lg:min-w-[500px] min-w-full p-6 border border-[#1e2939] rounded-md shadow-xs">
+          <div class="bg-[#101828] block lg:min-w-[500px] min-w-96 p-6 border border-[#1e2939] rounded-md shadow-xs">
 
                <p v-if="flashcard =='' " class="text-center text-xl lg:text-3xl font-semibold text-white mt-5 capitalize">click next to display flashcard</p>
                <p v-else class="text-center text-3xl lg:text-5xl font-bold text-white mt-5 capitalize">{{flashcard?.romanji}}</p>
@@ -34,7 +34,8 @@ const next = () => {
      const random = Math.random();
      const min = 1;
      const max = japaneseWords.length;
-     const index = Math.floor(random * (max-min + 1) + min);
+     const index = Math.floor(Math.random() * max) + 1;
+     console.log(Math.random(),max);
      flashcard.value = japaneseWords[index - 1];
 }
 </script>

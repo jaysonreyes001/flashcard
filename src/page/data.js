@@ -1228,7 +1228,15 @@ const japaneseWords9 = [
 
 
 const japaneseWords = [
-          ...japaneseWords1
+          ...japaneseWords1,
+          ...japaneseWords2,
+          ...japaneseWords3,
+          ...japaneseWords4,
+          ...japaneseWords5,
+          ...japaneseWords6,
+          ...japaneseWords7,
+          ...japaneseWords8,
+          ...japaneseWords9
      ];
 
 export default japaneseWords;

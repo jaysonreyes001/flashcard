@@ -37,8 +37,6 @@ const next = () => {
      const index = Math.floor(Math.random() * max) + 1;
      flashcard.value = japaneseWords[index - 1];
      japaneseWords.splice(index-1,1);
-     console.log(max)
-
 }
 </script>
 <style lang="">

@@ -3,8 +3,8 @@
           <div class="bg-[#101828] block lg:min-w-[500px] min-w-96 p-6 border border-[#1e2939] rounded-md shadow-xs">
 
                <p v-if="flashcard =='' " class="text-center text-xl lg:text-3xl font-semibold text-white mt-5 capitalize">click next to display flashcard</p>
-               <p v-else class="text-center text-3xl lg:text-5xl font-bold text-white mt-5 capitalize">{{flashcard?.romanji}}</p>
-               <p v-if="show_answer" class="text-gray-500 text-xl text-center mt-2 ">{{flashcard?.answer}}</p>
+               <p v-else class="text-center text-3xl lg:text-5xl font-bold text-white mt-5 capitalize">{{flashcard?.japanese}}</p>
+               <p v-if="show_answer" class="text-gray-500 text-xl text-center mt-2 ">{{flashcard?.romanji}} | {{flashcard?.answer}}</p>
                <div class="flex justify-between mt-12">
                     <button @click.prevent="show_answer = true" type="button" class="inline-flex items-center  text-white bg-brand hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
                          Show
